@@ -1,0 +1,16 @@
+@import '../globals.module.scss';
+
+
+.sectionContainer {
+    padding-inline: $global-padding;
+    width: 100%;
+    border: $global-border; // for testing purpose
+
+    @media screen and (max-width: 1008px) {
+        padding-inline: calc($global-padding / 2);
+    }
+
+    @media screen and (max-width: 506px) {
+        padding-inline: $mobile-padding;
+    }
+}

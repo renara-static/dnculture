@@ -1,0 +1,25 @@
+@import '../../styles/globals.module.scss';
+
+
+.productSectionContainer {
+    display: flex;
+    // padding: 3.75rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+
+
+    .CardContainer {
+        width: 100%;
+        display: grid;
+        gap: 2.06rem;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: repeat(3, 1fr);
+
+        @media screen and (max-width: 768px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}

@@ -1,0 +1,23 @@
+@import '../../styles/globals.module.scss';
+
+.aboutContainer {
+    padding: $section-padding;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+
+    @media screen and (max-width: 768px) {
+        padding: 0rem;
+    }
+
+    .aboutContent {
+        color: #FFF;
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        font-size: clamp(1.5rem, 2.5vw, 2rem);
+        font-style: normal;
+        font-weight: 400;
+        line-height: 180%;
+
+    }
+}

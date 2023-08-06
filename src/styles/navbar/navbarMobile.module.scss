@@ -1,0 +1,58 @@
+@import '../globals.module.scss';
+
+
+.NavbarMobile {
+    border: $global-border; // for debugging
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    padding-block: 0;
+    margin: 0;
+    height: $navbar-height;
+    max-height: $navbar-height !important;
+    overflow: hidden;
+
+    .NavbarLogo {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        // width: 2.5rem;
+        height: 1rem;
+        padding-block: 4rem;
+        scale: 0.5;
+        transform-origin: left;
+    }
+
+    .NavbarMobileButton {
+        width: 3rem;
+        height: 3rem;
+        flex-shrink: 0;
+        background-color: rgba(255, 255, 255, 0.10);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        padding: 0.62rem;
+
+        .NavbarMobileButtonIcon {
+            object-fit: contain;
+        }
+    }
+}
+
+
+.NavbarMobileMenuContainer {
+    border: $global-border; // for debugging
+    width: 100%;
+    height: fit-content;
+    overflow: hidden;
+    // backdrop-filter: blur(31px);
+    display: inline-flex;
+    padding: 1rem 0.75rem 0.75rem 0.75rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+}

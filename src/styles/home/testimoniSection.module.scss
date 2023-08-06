@@ -1,0 +1,56 @@
+@import '../globals.module.scss';
+
+
+.testimoniSectionContainer {
+    position: relative;
+
+    .buttonControl {
+        width: 2.5rem;
+        height: 2.5rem;
+        background-color: $green-color;
+        border-radius: 50%;
+        z-index: 10;
+        position: absolute;
+        top: 50%;
+        pointer-events: all;
+        cursor: pointer;
+
+        &:hover {
+            opacity: 0.5;
+        }
+
+        &.buttonLeft {
+            left: -4rem;
+        }
+
+        &.buttonRight {
+            right: -4rem;
+        }
+
+        @media screen and (max-width: 500px) {
+            &.buttonLeft {
+                display: none;
+            }
+
+            &.buttonRight {
+                display: none;
+            }
+        }
+    }
+
+    .testimoniCardContainer {
+        display: flex;
+        width: fit-content;
+        margin-block: 2rem;
+        max-width: 100%;
+        overflow: hidden;
+        gap: 2.06rem;
+        pointer-events: all;
+        cursor: grab;
+        isolation: isolate;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+}

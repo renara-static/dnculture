@@ -1,0 +1,12 @@
+@import '../../styles/globals.module.scss';
+
+.faqSection {
+    padding: $navbar-height;
+    height: fit-content;
+    padding-inline: calc($global-padding + 3.5rem);
+    border: $global-border; // for testing purpose
+
+    @media screen and (max-width: 768px) {
+        padding-inline: $mobile-padding;
+    }
+}

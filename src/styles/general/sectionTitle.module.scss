@@ -1,0 +1,52 @@
+@import '../globals.module.scss';
+
+.sectionTitleContainer {
+    border: $global-border; // for testing purpose
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    width: 100%;
+    justify-content: space-between;
+
+
+    .titleContainerLeft {
+        display: flex;
+        align-items: center;
+        gap: 1.25rem;
+
+        .titleLogo {
+            padding: clamp(0.5rem, 1vw, 1rem);
+            width: clamp(3rem, 5vw, 5rem);
+            flex-shrink: 0;
+            border-radius: 50%;
+        }
+
+        .titleText {
+            color: #FFF;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 3rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+
+
+        @media screen and (max-width: 768px) {
+            .titleLogo {
+                width: 3rem;
+                height: 3rem;
+            }
+
+            .titleText {
+                font-size: 2rem;
+            }
+        }
+    }
+
+
+    .CTAContainer {
+        @media screen and (max-width: 768px) {
+            display: none;
+        }
+    }
+}
