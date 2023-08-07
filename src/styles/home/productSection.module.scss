@@ -2,8 +2,8 @@
 
 
 .productSectionContainer {
+    isolation: isolate;
     display: flex;
-    // padding: 3.75rem;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
@@ -13,13 +13,34 @@
     .CardContainer {
         width: 100%;
         display: grid;
-        gap: 2.06rem;
+        gap: 0.75rem;
         justify-content: center;
         align-items: center;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(8, 1fr);
+        // grid-template-rows: repeat(2, 1fr);
+
+        // &:nth-child(1) {
+        //     border: 2rem solid blue;
+        // }
+
+        &:first-child {
+            border: 2rem solid blue;
+            // grid-template-columns: repeat(4, 1fr);
+            // grid-template-rows: repeat(2, 1fr);
+            width: 100%;
+            // grid-template-columns: repeat(4, 1fr);
+        }
 
         @media screen and (max-width: 768px) {
             grid-template-columns: repeat(2, 1fr);
         }
+
+    }
+
+    .ProductTitleOrnament {
+        z-index: -1;
+        position: absolute;
+        transform: translate(0%, -19rem) scale(0.60);
+        transform-origin: left bottom;
     }
 }

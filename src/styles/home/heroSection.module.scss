@@ -1,65 +1,130 @@
 @import '../../styles/globals.module.scss';
 
 .heroSectionContainer {
-    width: 100%;
-    height: 30.125rem;
-    flex-shrink: 0;
-    border-radius: 2.5rem;
-    padding: 3.75rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    position: relative;
-    overflow: hidden;
     isolation: isolate;
+    width: 100%;
+    display: flex;
 
-    @media screen and (max-width: 568px) {
-        padding: 2rem;
-        border-radius: 1.5rem;
-    }
+    .heroSectionLeft {
+        width: 50%;
+        border: $global-border; // for testing purpose
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        justify-content: center;
 
+        .textSection {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            border: $global-border; // for testing purpose
 
-    .background {
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 100%;
-        height: 100%;
-        z-index: -1;
-        isolation: isolate;
-        // animation: backgroundAnimation 20s ease-in-out infinite;
-        object-fit: cover;
+            .text {
+                border: $global-border; // for testing purpose
 
-        @media screen and (max-width: 168px) {
-            scale: 2;
-        }
-
-        @keyframes backgroundAnimation {
-            0% {
-                transform: rotate(360deg) scale(10);
+                color: #C1C1C1;
+                font-family: Plus Jakarta Sans;
+                font-size: 2rem;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
             }
         }
+
+        .ctaSection {
+            border: $global-border; // for testing purpose  
+            height: fit-content;
+        }
     }
 
-    .heroSectionTitle {
-        border: $global-border; // for testing purpose
-        width: 43.875rem;
-        max-width: 100%;
-        color: $text-color-light;
-        font-family: 'Plus Jakarta Sans', sans-serif;
-        font-size: 3.5rem;
-        font-style: normal;
-        font-weight: 800;
-        line-height: normal;
+}
 
-        @media screen and (max-width: 568px) {
-            width: 100%;
-            font-size: 2.75rem;
-        }
 
-        @media screen and (max-width: 320px) {
-            font-size: 2.25rem;
-        }
+.heroSectionRight {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 50%;
+    gap: 1rem;
+    align-items: center;
+    padding-block: 2rem;
+    padding-left: 2rem;
+    position: relative;
+
+    .sectionRightColumn {
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .svg {
+        width: 5rem;
+    }
+
+    .ornament {
+        position: absolute;
+        z-index: -1;
+        isolation: isolate;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transform-origin: top left;
+        scale: 2;
+        fill: linear-gradient(158deg, #343434 0%, rgba(52, 52, 52, 0.00) 100%);
+        opacity: 0.5;
+    }
+}
+
+
+
+
+
+.ornamentContainer {
+    $global-border: $global-border;
+    position: absolute;
+    isolation: isolate;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    // left: 0;
+
+    .BG {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        isolation: isolate;
+        z-index: -1;
+    }
+
+    .Ornament {
+        border: $global-border; // for testing purpose      
+        isolation: isolate;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        isolation: isolate;
+        z-index: 1;
+        scale: 1.5;
+        transform-origin: left top;
+        transform: translate(5rem, 5rem);
+        overflow: hidden;
+
+    }
+
+
+
+    .Ambient {
+        position: absolute;
+        top: 0;
+        transform: translate(0, -7rem);
+        z-index: 2;
+        isolation: isolate;
     }
 
 }

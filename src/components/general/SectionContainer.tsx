@@ -1,6 +1,9 @@
 import React from 'react'
 import styles from '@/styles/general/sectionContainer.module.scss'
 import variables from '@/styles/globals.module.scss'
+import CarbonBg from '@/assets/images/background/carbon.svg'
+import Image from 'next/image'
+import RadialBg from '@/assets/images/background/radial.svg'
 
 type SectionContainerProps = {
     backgroundColor?: string,
@@ -12,9 +15,10 @@ type SectionContainerProps = {
     marginBottom?: boolean,
     id?: string,
     style?: React.CSSProperties,
+    ornament?: React.ReactNode,
 }
 
-export default function SectionContainer({ backgroundColor, children, className, marginTop, padding, paddingBlock, marginBottom, style, id }: SectionContainerProps) {
+export default function SectionContainer({ backgroundColor, children, className, marginTop, padding, paddingBlock, marginBottom, style, id, ornament }: SectionContainerProps) {
     return (
         <div
             id={id}
@@ -28,6 +32,7 @@ export default function SectionContainer({ backgroundColor, children, className,
                 ...style,
             }}
         >
+            {ornament}
             {children}
         </div>
     )

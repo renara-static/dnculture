@@ -2,6 +2,9 @@ import React from 'react'
 import Link from 'next/link'
 import styles from '@/styles/general/navbar.module.scss'
 import Image from 'next/image'
+import { TextHighlight as V } from '../general/TextHighlight'
+import { useRouter } from 'next/router'
+import variables from '@/styles/globals.module.scss'
 
 type NavbarMenuButtonProps = {
     link?: any,
@@ -13,19 +16,19 @@ type NavbarMenuButtonProps = {
 }
 
 export default function NavbarMenuButton({ link, image, children, color, onclick }: NavbarMenuButtonProps) {
-    // const href = new URL('/')
+    const router = useRouter()
+    const style = {
+        marginRight: 10,
+        color: router.asPath === link ? variables.accentColor : variables.textColorLight,
+    }
     return (
-        <Link href={link} className={styles.NavbarButton}
-    
-        onClick={onclick}
+        <Link
+            href={link} className={styles.NavbarButton}
+            onClick={onclick}
         >
-            <div className={styles.imageContainer} style={{
-                backgroundColor: color,
-            }}>
-                <Image src={image} alt={`Icon ${children}`} className={styles.image} />
-            </div>
-            {/* <Image src={icon} alt='icon' /> */}
-            <span>{children}</span>
+            <span
+                style={style}
+            >{children}</span>
         </Link>
     )
 }

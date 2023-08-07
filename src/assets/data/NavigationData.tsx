@@ -4,35 +4,35 @@ import ProductIcon from '@/assets/images/icon/product-icon.svg'
 import AboutIcon from '@/assets/images/icon/about-icon.svg'
 import TestiIcon from '@/assets/images/icon/testimoni.svg'
 
-const HomeSectionData = [
+const NavData = [
     {
         id: 1,
-        name: 'Tentang Kita',
-        path: '/#about',
+        name: 'Beranda',
+        path: '/',
         bg: variables.accentColor,
         image: AboutIcon
     },
     {
         id: 2,
-        name: 'Produk Kita',
-        path: '/#product',
+        name: 'Proses Pemesanan',
+        path: '/process',
         bg: '#FF3B99',
         image: ProductIcon
     },
     {
         id: 3,
-        name: 'FAQ',
-        path: '/#faq',
+        name: 'Syarat & Ketentuan',
+        path: '/terms',
         bg: '#F80',
         image: FaqIcon,
     },
-    {
-        id: 4,
-        name: 'Testimoni',
-        path: '/#testimoni',
-        bg: variables.greenColor,
-        image: TestiIcon
-    }
+    // {
+    //     id: 4,
+    //     name: 'Kontak Kami',
+    //     path: '/contact',
+    //     bg: variables.greenColor,
+    //     image: TestiIcon
+    // }
 ]
 
-export default HomeSectionData;
+export default NavData;

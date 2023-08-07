@@ -1,32 +1,56 @@
+@import "../globals.module.scss";
+
 $breakpoint: 768px;
 
-.NavbarMobile {
-    display: none;
+.NavbarParent {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    width: 100%;
+    background: $secondary-color;
+    backdrop-filter: blur(50px);
+    height: $navbar-height;
 
-    @media screen and (max-width: $breakpoint) {
-        display: block;
-    }
-}
-
-.NavbarDesktop {
-    display: block;
-
-    @media screen and (max-width: $breakpoint) {
+    // logic for navbar responsiveness 
+    .NavbarMobile {
         display: none;
+
+        @media screen and (max-width: $breakpoint) {
+            display: block;
+        }
     }
+
+    // logic for navbar responsiveness
+    .NavbarDesktop {
+        display: block;
+
+        @media screen and (max-width: $breakpoint) {
+            display: none;
+        }
+    }
+
 }
+
 
 
 .NavbarButton {
-    display: inline-flex;
-    padding: 0.75rem 2rem 0.75rem 0.75rem;
-    justify-content: left;
+    // border: $global-border; // for testing purpose
+    display: flex;
     align-items: center;
+    justify-content: center;
     gap: 0.75rem;
     border-radius: 2.5rem;
-    background: rgba(255, 255, 255, 0.10);
     height: fit-content;
     width: 100%;
+
+    color: $text-color-light;
+    text-align: center;
+    font-family: Plus Jakarta Sans;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
 
     &:hover {
         background: rgba(255, 255, 255, 0.20);

@@ -16,6 +16,9 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import { useSwiper } from 'swiper/react'
 import SectionContainer from '../general/SectionContainer'
+import ContentContainer from '../general/ContentContainer'
+import StyledText from '../general/StyledText'
+import TestiTitleBackground from '@/assets/images/background/testimonies.webp'
 
 export default function TestimoniSection() {
     const cardData = Array.from({ length: 10 }, () => 'testimoni');
@@ -30,79 +33,88 @@ export default function TestimoniSection() {
             paddingBlock={true}
             marginBottom={true}
         >
-            <div className={styles.testimoniSectionContainer}>
-                <SectionTitle color={variables.greenColor}
-                    image={TestiIcon}>
-                    Testimoni
-                </SectionTitle>
-                <button
-                    id='button-left'
-                    onClick={() => {
-                        if (swiperRef.current) {
-                            (swiperRef.current as any).slidePrev();
-                        }
-                    }}
-                    className={`${styles.buttonControl} ${styles.buttonLeft}`}>
-                    <Image src={ChevronLeft} alt='testi' />
-                </button>
-                <button
-                    id='button-right'
-                    onClick={() => {
-                        if (swiperRef.current) {
-                            (swiperRef.current as any).slideNext();
-                        }
-                    }}
+            <ContentContainer>
+                <div className={styles.testimoniSectionContainer}>
+                    <StyledText
+                        src={TestiTitleBackground}
+                    />
+                    <SectionTitle>
+                        Testimoni
+                    </SectionTitle>
+                    <p
+                    className={styles.testimoniDescription}
+                    >
+                        Lorem ipsum dolor sit amet consectetur. Facilisis eu rhoncus curabitur placerat mauris ipsum donec gravida. Facilisi et magna a aliquet.
+                    </p>
+                    <button
+                        id='button-left'
+                        onClick={() => {
+                            if (swiperRef.current) {
+                                (swiperRef.current as any).slidePrev();
+                            }
+                        }}
+                        className={`${styles.buttonControl} ${styles.buttonLeft}`}>
+                        <Image src={ChevronLeft} alt='testi' />
+                    </button>
+                    <button
+                        id='button-right'
+                        onClick={() => {
+                            if (swiperRef.current) {
+                                (swiperRef.current as any).slideNext();
+                            }
+                        }}
 
-                    className={`${styles.buttonControl} ${styles.buttonRight}`}
-                >
-                    <Image src={ChevronRight} alt='testi' />
-                </button>
-                <Swiper
-                    slidesPerView={2}
-                    spaceBetween={50}
-                    pagination={{
-                        clickable: true,
-                    }}
-                    onSwiper={(swiper: any) => {
-                        if (swiper) {
-                            swiperRef.current = swiper;
-                        }
-                    }}
-                    modules={[Pagination, Navigation, A11y]}
-                    className={`${styles.testimoniCardContainer}`}
-                    navigation={true}
-                    breakpoints={{
-                        0: {
-                            slidesPerView: 1,
-                            spaceBetween: 20,
-                        },
-                        768: {
-                            slidesPerView: 2,
-                            spaceBetween: 50,
-                        },
-                    }}
-                >
+                        className={`${styles.buttonControl} ${styles.buttonRight}`}
+                    >
+                        <Image src={ChevronRight} alt='testi' />
+                    </button>
+                    <Swiper
+                        slidesPerView={2}
+                        spaceBetween={50}
+                        pagination={{
+                            clickable: true,
+                        }}
+                        onSwiper={(swiper: any) => {
+                            if (swiper) {
+                                swiperRef.current = swiper;
+                            }
+                        }}
+                        modules={[Pagination, Navigation, A11y]}
+                        className={`${styles.testimoniCardContainer}`}
+                        navigation={true}
+                        breakpoints={{
+                            0: {
+                                slidesPerView: 1,
+                                spaceBetween: 20,
+                            },
+                            768: {
+                                slidesPerView: 2,
+                                spaceBetween: 50,
+                            },
+                        }}
+                    >
 
-                    {
-                        cardData.map((item, index) => {
-                            return (
-                                <SwiperSlide key={index}
-                                    style={{
-                                        display: 'flex',
-                                        justifyContent: 'center',
-                                        width: 'fit-content',
-                                    }}>
-                                    <TestimoniCard
-                                        name='Rizky'
-                                        description='Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, voluptatum.'
-                                    />
-                                </SwiperSlide>
+                        {
+                            cardData.map((item, index) => {
+                                return (
+                                    <SwiperSlide key={index}
+                                        style={{
+                                            display: 'flex',
+                                            justifyContent: 'center',
+                                            width: 'fit-content',
+                                        }}>
+                                        <TestimoniCard
+                                            name='Rizky'
+                                            description='Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, voluptatum.'
+                                        />
+                                    </SwiperSlide>
+                                )
+                            }
                             )
                         }
-                        )
-                    }
-                </Swiper>
-            </div>
+                    </Swiper>
+                </div>
+            </ContentContainer>
         </SectionContainer>
     )
 }

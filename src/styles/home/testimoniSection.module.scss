@@ -3,6 +3,19 @@
 
 .testimoniSectionContainer {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    .testimoniDescription {
+        color: #B7B7B7;
+        font-family: Plus Jakarta Sans;
+        font-size: 1.75rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 180%;
+        /* 3.15rem */
+    }
 
     .buttonControl {
         width: 2.5rem;

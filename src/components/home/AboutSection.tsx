@@ -1,45 +1,36 @@
 import React from 'react'
 import variables from '@/styles/globals.module.scss'
 import styles from '@/styles/home/aboutSection.module.scss'
-import { styled } from '@stitches/react';
+import { TextHighlight as V } from '../general/TextHighlight';
 import SectionTitle from '../general/SectionTitle';
-import AboutLogo from '@/assets/images/icon/about-icon.svg';
+import AboutTitleBackground from '@/assets/images/background/About.webp';
 import SectionContainer from '../general/SectionContainer';
-const V = styled('div', {
-    color: variables.accentColor,
-    fontWeight: 'bold',
-    display: 'inline',
-    variants: {
-        variant: {
-            primary: {
-                backgroundColor: variables.accentColor,
+import ContentContainer from '../general/ContentContainer';
+import StyledText from '../general/StyledText';
+import { companyData } from '@/assets/data/companyData';
 
-            },
-            secondary: {
-                backgroundColor: variables.secondaryColor,
-            },
-        },
-    },
-});
 
 export default function AboutSection() {
+    const companyName = <V>{companyData?.name}</V>
     return (
         <SectionContainer
             id='about'
             marginBottom={true}
             paddingBlock={true}
         >
-            <div className={styles.aboutContainer}>
-                <SectionTitle image={AboutLogo} color='rgba(255, 204, 0, 1)'>
-                    Tentang Kita
-                </SectionTitle>
-                <div className={styles.aboutContent}>
-                    Nama <V>PickYourSlime</V> memberikan pengertian sebagai  “pilihlah slimemu”. <V>PickYourSlime</V> mempunyai tujuan untuk membuat banyak variasi slime yang dapat disukai oleh banyak pelanggan, sehingga pelanggan dapat bebas memilih slime yang mereka sukai.
-                    <br />
-                    <br />
-                    Maka itu, <V>PickYourSlime</V> memberikan dan membuat banyak variasi slime yang dapat dipilih sesuai keinginan pelanggan.
+            <ContentContainer>
+                <div className={styles.aboutContainer}>
+                    <StyledText
+                        src={AboutTitleBackground}
+                    />
+                    <SectionTitle>
+                        Tentang Kami
+                    </SectionTitle>
+                    <div className={styles.aboutContent}>
+                        {companyName} adalah unit usaha yang melayani titip beli berbagai barang dari luar negeri, khususnya di dunia otomotif. Anda bisa mendapatkan produk-produk berkualitas tinggi yang sesuai dengan selera dan kebutuhan Anda, mulai dari aksesoris, spare part, hingga motor impian Anda. Namun tidak menutup kemungkinan untuk memberikan apa yang Anda inginkan tanpa harus ribet. Anda cukup duduk manis dan menunggu barang datang. {companyName}  akan mengurus semua proses pembelian, pengiriman, dan bea cukai dengan profesional dan aman. {companyName} adalah solusi terbaik untuk Anda yang ingin belanja barang luar negeri tanpa repot.
+                    </div>
                 </div>
-            </div>
+            </ContentContainer>
         </SectionContainer>
     )
 }

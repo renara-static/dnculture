@@ -1,0 +1,15 @@
+@import '../globals.module.scss';
+
+.styledTextContainer {
+    border: $global-border; // for testing purpose
+    position: relative;
+
+    .styledText {
+        height: 9rem; // fallback for browsers that don't support clamp
+        height: clamp(1rem, 10vh, 9rem);
+        object-fit: contain;
+        width: inherit;
+        display: flex;
+        justify-content: flex-start;
+    }
+}

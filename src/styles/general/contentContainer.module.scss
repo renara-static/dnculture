@@ -1,0 +1,10 @@
+@import '../globals.module.scss';
+
+.contentContainer {
+    border: $global-border; // for testing purpose
+    padding-inline: clamp(1rem, 2vw, 3rem);
+    position: relative;
+    isolation: isolate;
+    z-index: 1;
+    // overflow: hidden;
+}

@@ -10,37 +10,37 @@ type SectionTitleProps = {
     subtitle?: string,
     children?: React.ReactNode,
     image?: any,
-    color: string,
+    // color: string,
     buttonCTA?: boolean,
     CTAContent?: string,
     CTAurl?: string,
 }
 
-export default function SectionTitle({ title, subtitle, children, image, color, buttonCTA, CTAContent, CTAurl }: SectionTitleProps) {
+export default function SectionTitle({ title, subtitle, children, image }: SectionTitleProps) {
     return (
         <div className={styles.sectionTitleContainer}>
             <div className={styles.titleContainerLeft}>
-                <Image style={{
+                {/* <Image style={{
                     backgroundColor: color,
                 }}
                     src={image}
                     alt={title}
                     className={styles.titleLogo}
-                />
+                /> */}
                 <span className={styles.titleText}>
                     {children}
                 </span>
             </div>
             <div
-            className={styles.CTAContainer}
+                className={styles.CTAContainer}
             >
-                {buttonCTA &&
+                {/* {buttonCTA &&
                     <CTAbutton url={CTAurl} color={color}
                         outline={true}
                     >
                         {CTAContent}
                     </CTAbutton>
-                }
+                } */}
             </div>
         </div>
     )

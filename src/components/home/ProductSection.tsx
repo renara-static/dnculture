@@ -4,8 +4,12 @@ import { productData } from "@/assets/data/productData";
 import styles from '@/styles/home/productSection.module.scss';
 import variables from '@/styles/globals.module.scss';
 import SectionTitle from "../general/SectionTitle";
-import ProductLogo from '@/assets/images/icon/product-icon.svg';
+import ProductTitleBackground from '@/assets/images/background/products.webp';
 import SectionContainer from "../general/SectionContainer";
+import ContentContainer from "../general/ContentContainer";
+import StyledText from "../general/StyledText";
+import Image from "next/image";
+import ProductTitleOrnament from '@/assets/images/background/product-ornament.webp';
 
 
 export default function ProductSection() {
@@ -15,25 +19,35 @@ export default function ProductSection() {
             paddingBlock={true}
             marginBottom={true}
         >
-            <div
-                className={styles.productSectionContainer}
-            >
-                <SectionTitle image={ProductLogo} color="rgba(255, 59, 153, 1)"
-                    buttonCTA={true}
-                    CTAContent="Lihat Lainnya"
+            <ContentContainer>
+                <div
+                    className={styles.productSectionContainer}
                 >
-                    Produk Kita
-                </SectionTitle>
-                <div className={styles.CardContainer}>
-                    {productData?.map((item, i) => {
-                        if (i === 0)
-                            return <ProductCard key={i} data={item} variant={'latest'} />
-                        else
-                            return <ProductCard key={i} data={item} />
-                    })
-                    }
+                    <StyledText
+                        src={ProductTitleBackground}
+                        ornament={<>
+                            <Image alt="test" src={ProductTitleOrnament}
+                                className={styles.ProductTitleOrnament}
+                            />
+                        </>}
+                    />
+                    <SectionTitle>
+                        Produk Kami
+                    </SectionTitle>
+                    <div className={styles.CardContainer}>
+                        {productData?.map((item, i) => {
+                            if (i === 0)
+                                return <ProductCard key={i} data={item} style={{
+                                    gridColumn: "1 / 3",
+                                    gridRow: "1 / 3",
+                                }} />
+                            else
+                                return <ProductCard key={i} data={item} />
+                        })
+                        }
+                    </div>
                 </div>
-            </div>
+            </ContentContainer>
         </SectionContainer>
     )
 }

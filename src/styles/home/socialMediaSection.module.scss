@@ -3,173 +3,56 @@
 
 .socialMediaSectionContainer {
     border: $global-border; // for testing purpose
-    margin-block: 5rem;
-    width: 100%;
-    min-height: 17.5rem;
-    flex-shrink: 0;
-    border-radius: 2.5rem;
-    background: #262626;
     display: flex;
-    padding: 4%;
-    position: relative;
-    isolation: isolate;
-    overflow: hidden;
-    max-height: fit-content;
-    position: relative;
+    flex-direction: column;
+    gap: 2.5rem;
 
-    @media screen and (max-width: 468px) {
-        border-radius: 1.25rem;
-        flex-direction: column;
-        justify-content: center;
-        padding: 1.25rem;
-        justify-content: space-evenly;
-    }
-
-
-    .MainBackground {
-        position: absolute;
-        top: -2rem;
-        left: 0rem;
-        scale: 1.5;
-        transform-origin: left top;
-        z-index: -1;
-        object-fit: cover;
-        overflow: hidden;
-
-        @media screen and (max-width: 1000px) {
-            height: fit-content;
-            transform: scaleY(2) scaleX(2);
-            filter: blur(0.3rem);
-        }
-    }
-
-    .contentLeft {
+    .Header {
         border: $global-border; // for testing purpose
+        width: 100%;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 1.5rem;
-        height: 100%;
-        min-width: 20%;
-        position: relative;
+        justify-content: space-between;
 
-        @media screen and (max-width: 768px) {
-            // width: 20rem;
-            height: fit-content;
-            padding: 0 2.5rem;
-            margin-bottom: 7rem;
+        .HeaderTitle {
+            color: #FFF;
+            font-family: Plus Jakarta Sans;
+
+            .HeaderTitleTop {
+                font-size: clamp(1rem, 2.5vw, 2rem);
+                font-weight: 500;
+            }
+
+            .HeaderTitleBottom {
+                font-size: clamp(1.5rem, 2.5vw, 2.5rem);
+                font-weight: 700;
+            }
         }
 
-        .background {
-            position: absolute;
-
-            width: 11.25rem;
-            height: 11.1875rem;
-            top: 0;
-            border: $global-border;
-            $top: -3rem;
-            $left: -3rem;
-            $top-mobile: -1rem;
-            $left-mobile: -1rem;
+        .HeaderCTA {
+            color: #B7B7B7;
+            text-align: center;
+            font-family: Plus Jakarta Sans;
+            font-size: 1rem;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            display: flex;
+            align-items: center;
+            gap: 1.25rem;
 
             @media screen and (max-width: 768px) {
-                width: 5.1875rem;
-                height: 5.1875rem;
-            }
-
-            &.instagram {
-                top: calc($top);
-                left: calc($left);
-                animation: instagram 5s linear infinite;
-
-                @media screen and (max-width: 768px) {
-                    top: calc($top-mobile + 1rem);
-                    left: calc($left-mobile + 1rem);
-                }
-
-                @keyframes instagram {
-                    0% {
-                        transform: rotate(0deg);
-                    }
-
-                    5% {
-                        transform: rotate(-30deg);
-                    }
-
-                    15% {
-                        transform: rotate(0deg);
-                    }
-
-                    100% {
-                        transform: rotate(0deg);
-                    }
-                }
-
-            }
-
-            &.tiktok {
-                top: calc($top + 4rem);
-                left: calc($left + 4rem);
-                animation: tiktok 5s linear infinite;
-
-                @media screen and (max-width: 768px) {
-                    top: calc($top-mobile + 3rem);
-                    left: calc($left-mobile + 3rem);
-                }
-
-                @keyframes tiktok {
-                    0% {
-                        transform: rotate(0deg);
-                    }
-
-                    5% {
-                        transform: rotate(30deg);
-                    }
-
-                    15% {
-                        transform: rotate(0deg);
-                    }
-
-                    100% {
-                        transform: rotate(0deg);
-                    }
-                }
+                display: none;
             }
         }
-
     }
 
-    .contentRight {
-        border: $global-border; // for testing purpose
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: flex-start;
-        position: relative;
-        gap: 2rem;
+    .socialCardList {
+        gap: 1rem;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
 
-        h1 {
-            color: #FFF;
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            font-size: 3rem;
-            font-size: clamp(2rem, 5vw, 3rem);
-            font-style: normal;
-            font-weight: 700;
-            line-height: 120%;
-
-        }
-
-        .CTAContainer {
-            display: flex;
-            gap: 1rem;
-            width: 100%;
-
-            @media screen and (max-width: 468px) {
-                flex-direction: column;
-                gap: 0.5rem;
-            }
+        @media (max-width: 768px) {
+            grid-template-columns: repeat(1, 1fr);
         }
     }
 }

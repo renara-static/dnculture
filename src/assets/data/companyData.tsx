@@ -1,15 +1,17 @@
+import BukalapakImage from '../images/icon/bukalapak.svg'
+
 export const companyData = {
-    name: 'PickYourSlime.id',
-    description: 'PickYourSlime.id adalah toko online yang menjual slime dengan berbagai macam varian dan jenis. Kami juga menerima pesanan slime custom sesuai dengan keinginan anda.',
+    name: 'DN Culture',
+    description: 'Dn culture adalah unit usaha yang melayani titip beli berbagai barang dari luar negeri. Khusus-nya di dunia otomotif, namun tidak menutup kemungkinan untuk memberikan apa yang anda inginkan tanpa harus ribet anda cukup Duduk manis dan menunggu barang datang',
     logo: '/logo.png',
+    contact: "https://api.whatsapp.com",
     address: 'Company Address',
     phone: 'Company Phone',
     email: 'Company Email',
-    social: {
-        // facebook: 'https://www.facebook.com/',
-        instagram: 'https://www.instagram.com/',
-        // twitter: 'https://twitter.com/',
-        // youtube: 'https://www.youtube.com/',
-        tiktok: 'https://www.tiktok.com/',
-    },
+    social: [
+        {
+            name: 'Bukalapak',
+            href: 'https://www.bukalapak.com/u/dnculture',
+        }
+    ]
 }

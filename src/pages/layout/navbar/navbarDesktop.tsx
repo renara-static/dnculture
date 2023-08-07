@@ -6,6 +6,8 @@ import RouteLink from '@/components/general/RouteLink'
 import CompanyLogo from '@/components/general/CompanyLogo'
 import NavbarMenuButton from '@/components/navbar/navbarMenuButton'
 import SectionContainer from '@/components/general/SectionContainer'
+import CTAbutton from '@/components/general/CTAbutton'
+import { companyData } from '@/assets/data/companyData'
 
 export default function NavbarDesktop({ data }: any) {
     return (<>
@@ -18,7 +20,6 @@ export default function NavbarDesktop({ data }: any) {
                 flexDirection: 'row',
                 justifyContent: 'space-between',
                 alignItems: 'center',
-                backdropFilter: 'blur(31px)'
             }}
         >
             <div id='Navbar-Desktop-Left'>
@@ -31,8 +32,7 @@ export default function NavbarDesktop({ data }: any) {
                 flexDirection: 'row',
                 justifyContent: 'center',
                 alignItems: 'center',
-                height: '100%',
-                gap: '0.75rem',
+                gap: '2.5rem',
             }}>
                 {data?.map((item: any) => {
                     return (
@@ -45,6 +45,11 @@ export default function NavbarDesktop({ data }: any) {
                     )
                 })
                 }
+                <CTAbutton
+                    url={companyData.contact}
+                >
+                    Contact Us
+                </CTAbutton>
             </div>
         </SectionContainer>
     </>

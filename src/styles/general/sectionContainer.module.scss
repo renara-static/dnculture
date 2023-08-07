@@ -5,12 +5,14 @@
     padding-inline: $global-padding;
     width: 100%;
     border: $global-border; // for testing purpose
+    position: relative;
+    isolation: isolate;
 
     @media screen and (max-width: 1008px) {
         padding-inline: calc($global-padding / 2);
     }
 
     @media screen and (max-width: 506px) {
-        padding-inline: $mobile-padding;
+        padding-inline: 0;
     }
 }

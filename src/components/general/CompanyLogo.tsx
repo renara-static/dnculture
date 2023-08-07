@@ -5,7 +5,6 @@ import styles from '@/styles/general/companyLogo.module.scss'
 
 export default function CompanyLogo({ }) {
     return (
-        // <>CompanyLogo</div>
-        <Image src={Logo} alt='logo' className={`${styles.logo}`} />
+        <div>CompanyLogo</div>
     )
 }
