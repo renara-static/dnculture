@@ -8,9 +8,9 @@ import SectionTitle from '../general/SectionTitle'
 import ContentContainer from '../general/ContentContainer'
 import ProductCard from '../product/ProductCard'
 // for hero right section
-import HelmetIlust from '@assets/images/ilust/Helmet.svg'
-import MotorIlust from '@assets/images/ilust/Motor.svg'
-import JacketIlust from '@assets/images/ilust/Jacket.svg'
+import HelmetIlust from '@assets/images/ilust/helmet.svg'
+import MotorIlust from '@assets/images/ilust/motor.svg'
+import JacketIlust from '@assets/images/ilust/jacket.svg'
 // bg 
 // import Ornament from '@assets/images/background/radial.svg'
 import CarbonBg from '@assets/images/background/carbon.svg'
