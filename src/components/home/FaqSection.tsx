@@ -14,7 +14,7 @@ export default function FaqSection() {
             paddingBlock={true}
             marginBottom={true}
         >
-            <SectionTitle image={FaqLogo} color='rgba(255, 136, 0, 1)'
+            <SectionTitle image={FaqLogo}
             buttonCTA={true}
             CTAContent='Ajukan Pertanyaan'
             >
