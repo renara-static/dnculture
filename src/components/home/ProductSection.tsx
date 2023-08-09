@@ -38,8 +38,8 @@ export default function ProductSection() {
                         {productData?.map((item, i) => {
                             if (i === 0)
                                 return <ProductCard key={i} data={item} style={{
-                                    gridColumn: "1 / 3",
-                                    gridRow: "1 / 3",
+                                    // gridColumn: "1 / 3",
+                                    // gridRow: "1 / 3",
                                 }} />
                             else
                                 return <ProductCard key={i} data={item} />

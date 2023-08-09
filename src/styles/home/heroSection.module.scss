@@ -4,8 +4,15 @@
     isolation: isolate;
     width: 100%;
     display: flex;
+    // position: relative;
+
+    @media screen and (max-width: 768px) {
+        width: 150%;
+    }
+
 
     .heroSectionLeft {
+        // position: relative;
         width: 50%;
         border: $global-border; // for testing purpose
         display: flex;
@@ -37,6 +44,27 @@
         }
     }
 
+    .BG {
+        position: absolute;
+        top: 0;
+        left: 0px;
+        // right: 0;
+        margin: auto;
+        width: 100vw;
+        height: 100vh;
+        isolation: isolate;
+        z-index: -4;
+        scale: 2;
+    }
+
+    .Ambient {
+        position: absolute;
+        top: -3rem;
+        z-index: -3;
+        isolation: isolate;
+        scale: 1.5;
+        opacity: 0.5;
+    }
 }
 
 
@@ -49,7 +77,6 @@
     align-items: center;
     padding-block: 2rem;
     padding-left: 2rem;
-    position: relative;
 
     .sectionRightColumn {
         display: flex;
@@ -63,18 +90,20 @@
         width: 5rem;
     }
 
-    .ornament {
-        position: absolute;
-        z-index: -1;
-        isolation: isolate;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        transform-origin: top left;
-        scale: 2;
-        fill: linear-gradient(158deg, #343434 0%, rgba(52, 52, 52, 0.00) 100%);
-        opacity: 0.5;
-    }
+    // .ornament {
+    //     position: absolute;
+    //     z-index: -1;
+    //     isolation: isolate;
+    //     width: 100%;
+    //     height: 100%;
+    //     object-fit: cover;
+    //     transform-origin: top left;
+    //     scale: 2;
+    //     fill: linear-gradient(158deg, #343434 0%, rgba(52, 52, 52, 0.00) 100%);
+    //     opacity: 0.5;
+    // }
+
+
 }
 
 
@@ -84,21 +113,11 @@
 .ornamentContainer {
     $global-border: $global-border;
     position: absolute;
-    isolation: isolate;
+    // isolation: isolate;
     width: 100%;
     height: 100%;
     top: 0;
-    // left: 0;
-
-    .BG {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        isolation: isolate;
-        z-index: -1;
-    }
+    z-index: 1;
 
     .Ornament {
         border: $global-border; // for testing purpose      

@@ -10,6 +10,7 @@ import CTAbutton from '../general/CTAbutton'
 import SectionContainer from '../general/SectionContainer'
 import ContentContainer from '../general/ContentContainer'
 import MediaSocial from '../general/MediaSocialCard'
+import { companyData } from '@/assets/data/companyData'
 
 export default function SocialMediaSection() {
     return (
@@ -30,7 +31,7 @@ export default function SocialMediaSection() {
                             </span>
                             <br />
                             <span
-                            className={styles.HeaderTitleBottom}
+                                className={styles.HeaderTitleBottom}
                             >
                                 Cek media sosial kita
                             </span>
@@ -45,8 +46,10 @@ export default function SocialMediaSection() {
                     </div>
                     <div className={styles.socialCardList}>
                         {
-                            Array(4).fill(0).map((_, index) => {
-                                return <MediaSocial key={index} />
+                            companyData.social.map((data, index) => {
+                                return <MediaSocial key={index}
+                                    {...data}
+                                />
                             }
                             )
                         }

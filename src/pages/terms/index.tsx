@@ -13,8 +13,8 @@ export default function TermsPage() {
     return (
         <>
             <SectionContainer
-                marginTop={true}
-                marginBottom={true}
+                // marginTop={true}
+                // marginBottom={true}
                 paddingBlock={true}
             >
                 <ContentContainer>
@@ -47,7 +47,7 @@ export default function TermsPage() {
                 </ContentContainer>
             </SectionContainer>
             <SectionContainer
-                marginBottom={true}
+                // marginBottom={true}
                 paddingBlock={true}
             >
                 <ContentContainer>
@@ -79,7 +79,7 @@ export default function TermsPage() {
                 </ContentContainer>
             </SectionContainer>
             <SectionContainer
-                marginBottom={true}
+                // marginBottom={true}
                 paddingBlock={true}
             >
                 <ContentContainer>

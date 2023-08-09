@@ -58,8 +58,7 @@ export default function HeroSection() {
                 <div
                     className={styles.ornamentContainer}
                 >
-                    <Image src={CarbonBg} alt="Carbon Background" className={styles.BG} />
-                    <Image src={Ambientornamment} alt="Hero Background" className={styles.Ambient} />
+                    {/* <Image src={Ambientornamment} alt="Hero Background" className={styles.Ambient} /> */}
                     <Image src={RadialBg} alt="Radial Background" className={styles.Ornament} />
                 </div>
             }
@@ -68,6 +67,8 @@ export default function HeroSection() {
                 <div id='hero-section-container'
                     className={styles.heroSectionContainer}
                 >
+                    <Image src={CarbonBg} alt="Carbon Background" className={styles.BG} />
+                    <Image src={Ambientornamment} alt="Hero Background" className={styles.Ambient} />
                     <div className={styles.heroSectionLeft}>
                         <div className={styles.textSection}>
                             <SectionTitle>
