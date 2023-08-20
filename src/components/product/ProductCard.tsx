@@ -6,19 +6,33 @@ import SampleImg from '@/assets/images/product/product-sample.png';
 import Arrow from '@/assets/images/icon/arrow-right-large.svg';
 
 type ProductCardProps = {
-    data?: any,
+    // item?: any,
     variant?: string | any,
     style?: React.CSSProperties,
 }
 
-export default function ProductCard({ data, variant, style }: ProductCardProps) {
+export default function ProductCard(
+
+    item: any,
+    { variant, style }: ProductCardProps) {
     return (
         <div className={styles.productCard}
             style={{
                 ...style
             }}
         >
-            <Image src={SampleImg} alt="Product Sample" className={styles.productImage} />
+            {
+                item ?
+                    <Image
+                        alt='test'
+                        src={item.image}
+                        className={styles.productImage} />
+
+                    : <Image
+                        alt='test'
+                        src={SampleImg}
+                        className={styles.productImage} />
+            }
         </div>
     )
 }

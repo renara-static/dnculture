@@ -25,7 +25,6 @@ export default function Navbar() {
                 opacity: 0,
                 height: variables.navbarHeight,
                 width: '100%',
-                // background: 'rgba(30, 30, 30, 0.50)',
             }}>
                 placeholder
             </div>

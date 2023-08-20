@@ -46,7 +46,7 @@ export default function SocialMediaSection() {
                     </div>
                     <div className={styles.socialCardList}>
                         {
-                            companyData.social.map((data, index) => {
+                            companyData.social.map((data : any, index : any) => {
                                 return <MediaSocial key={index}
                                     {...data}
                                 />

@@ -11,6 +11,10 @@ $breakpoint: 768px;
     background: $secondary-color;
     backdrop-filter: blur(50px);
     height: $navbar-height;
+    -webkit-backdrop-filter: blur(50px);
+    -moz-backdrop-filter: blur(50px);
+    -ms-backdrop-filter: blur(50px);
+    -o-backdrop-filter: blur(50px);
 
     // logic for navbar responsiveness 
     .NavbarMobile {
@@ -35,7 +39,6 @@ $breakpoint: 768px;
 
 
 .NavbarButton {
-    // border: $global-border; // for testing purpose
     display: flex;
     align-items: center;
     justify-content: center;
@@ -51,12 +54,23 @@ $breakpoint: 768px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+    padding: 0.75rem 1rem;
+    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
 
     &:hover {
-        background: rgba(255, 255, 255, 0.20);
+        background-color: rgba(255, 255, 255, 0.20);
 
         .imageContainer {
-            scale: 1.1;
+            transform: scale(1.1);
+            -webkit-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+            -moz-transform: scale(1.1);
+            -o-transform: scale(1.1);
+
         }
     }
 
@@ -78,9 +92,6 @@ $breakpoint: 768px;
     span {
         color: #FFF;
         text-align: center;
-        // leading-trim: both;
-        // leading-trim: both;
-        // text-edge: cap;
         font-family: 'Plus Jakarta Sans', sans-serif;
         font-size: 1.25rem;
         font-style: normal;

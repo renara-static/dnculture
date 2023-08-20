@@ -18,6 +18,7 @@ import RadialBg from '@assets/images/background/radial.svg'
 import Ambientornamment from '@assets/images/background/ambient-ornament.png'
 import { companyData } from '@/assets/data/companyData'
 import { TextHighlight as V } from '../general/TextHighlight'
+import { productData } from '@/assets/data/productData'
 
 
 function SectionRight() {
@@ -29,19 +30,29 @@ function SectionRight() {
             <div
                 className={styles.sectionRightColumn}
             >
-                <Image className={styles.svg} src={JacketIlust} alt="Jacket" />
+                <Image
+                    className={styles.svg}
+                    src={JacketIlust} alt="Jacket" />
             </div>
             <div
                 className={styles.sectionRightColumn}>
-                <ProductCard />
-                <ProductCard />
+                <ProductCard
+                    {...productData[0]}
+                />
+                <ProductCard
+                    {...productData[1]}
+                />
                 <Image className={styles.svg} src={MotorIlust} alt="Motor" />
             </div>
             <div
                 className={styles.sectionRightColumn}>
                 <Image className={styles.svg} src={HelmetIlust} alt="Helmet" />
-                <ProductCard />
-                <ProductCard />
+                <ProductCard
+                    {...productData[2]}
+                />
+                <ProductCard
+                    {...productData[3]}
+                />
             </div>
         </div>
     )
@@ -58,7 +69,6 @@ export default function HeroSection() {
                 <div
                     className={styles.ornamentContainer}
                 >
-                    {/* <Image src={Ambientornamment} alt="Hero Background" className={styles.Ambient} /> */}
                     <Image src={RadialBg} alt="Radial Background" className={styles.Ornament} />
                 </div>
             }

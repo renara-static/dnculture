@@ -32,7 +32,6 @@
         font-style: normal;
         font-weight: 700;
         line-height: 160%;
-        /* 3.84rem */
     }
 
     .processCardContent {
@@ -45,5 +44,6 @@
         line-height: 160%;
         /* 3.84rem */
         flex: 1 0 0;
+        -ms-flex: 1 0 0;
     }
 }

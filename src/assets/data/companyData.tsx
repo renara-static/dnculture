@@ -3,11 +3,11 @@ import InstagramImage from '../images/icon/instagram.svg';
 import ShopeeImage from '../images/icon/shopee.svg';
 import TokopediaImage from '../images/icon/tokopedia.svg';
 
-export const companyData = {
+export const companyData: any = {
     name: 'DN Culture',
     description: 'Dn culture adalah unit usaha yang melayani titip beli berbagai barang dari luar negeri. Khusus-nya di dunia otomotif, namun tidak menutup kemungkinan untuk memberikan apa yang anda inginkan tanpa harus ribet anda cukup Duduk manis dan menunggu barang datang',
     logo: '/logo.png',
-    contact: "https://api.whatsapp.com",
+    contact: "https://wa.me/628125880555",
     address: 'Company Address',
     phone: 'Company Phone',
     email: 'Company Email',
