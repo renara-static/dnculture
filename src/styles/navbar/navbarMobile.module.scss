@@ -4,9 +4,25 @@
 .NavbarMobile {
     border: $global-border; // for debugging
     display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
     flex-direction: row;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
     justify-content: space-between;
+    justify-content: -webkit-space-between;
+    justify-content: -moz-space-between;
+    justify-content: -ms-space-between;
+    justify-content: -o-space-between;
     align-items: center;
+    align-items: -webkit-center;
+    align-items: -moz-center;
+    align-items: -ms-center;
+    align-items: -o-center;
     padding: 1.6rem 2rem;
     margin: 0;
     height: 7.2rem;
@@ -16,28 +32,67 @@
 
     .NavbarLogo {
         display: flex;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
         justify-content: left;
+        justify-content: -webkit-left;
+        justify-content: -moz-left;
+        justify-content: -ms-left;
+        justify-content: -o-left;
         align-items: center;
-        // width: 2.5rem;
+        align-items: -webkit-center;
+        align-items: -moz-center;
+        align-items: -ms-center;
+        align-items: -o-center;
         height: 1rem;
         padding-block: 4rem;
-        scale: 0.5;
+        transform: scale(0.5);
+        -webkit-transform: scale(0.5);
+        -moz-transform: scale(0.5);
+        -ms-transform: scale(0.5);
+        -o-transform: scale(0.5);
         transform-origin: left;
+        -o-transform-origin: left;
+        -ms-transform-origin: left;
+        -moz-transform-origin: left;
+        -webkit-transform-origin: left;
     }
 
     .NavbarMobileButton {
         display: flex;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
         padding: 0.4rem;
         flex-direction: column;
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        -ms-flex-direction: column;
+        -o-flex-direction: column;
         align-items: flex-start;
+        align-items: -webkit-flex-start;
+        align-items: -moz-flex-start;
+        align-items: -ms-flex-start;
+        align-items: -o-flex-start;
         gap: 1rem;
         border-radius: 1.2rem;
         background: rgba(255, 255, 255, 0.40);
 
         .NavbarMobileButtonInner {
             display: flex;
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flex;
+            display: -o-flex;
             padding: 0.7rem 1.6rem;
             justify-content: center;
+            justify-content: -webkit-center;
+            justify-content: -moz-center;
+            justify-content: -ms-center;
+            justify-content: -o-center;
             align-items: center;
             align-self: stretch;
             border-radius: 1rem;
@@ -48,7 +103,12 @@
 
             .NavbarMobileButtonIcon {
                 object-fit: contain;
+                -o-object-fit: contain;
                 filter: invert(1);
+                -webkit-filter: invert(1);
+                -moz-filter: invert(1);
+                -ms-filter: invert(1);
+                -o-filter: invert(1);
             }
         }
     }
@@ -63,9 +123,26 @@
     overflow: hidden;
     // backdrop-filter: blur(31px);
     display: inline-flex;
+    display: -webkit-inline-flex;
+    display: -moz-inline-flex;
+    display: -ms-inline-flex;
+    display: -o-inline-flex;
+
     padding: 1rem 0.75rem 0.75rem 0.75rem;
     flex-direction: column;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
     justify-content: center;
+    justify-content: -webkit-center;
+    justify-content: -moz-center;
+    justify-content: -ms-center;
+    justify-content: -o-center;
     align-items: flex-start;
+    align-items: -webkit-flex-start;
+    align-items: -moz-flex-start;
+    align-items: -ms-flex-start;
+    align-items: -o-flex-start;
     gap: 1rem;
 }
