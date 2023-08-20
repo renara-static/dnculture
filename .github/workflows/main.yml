@@ -2,7 +2,7 @@
   on:
     push:
       branches:
-        - production
+        - main
   jobs:
     deploy:
       runs-on: ubuntu-latest
