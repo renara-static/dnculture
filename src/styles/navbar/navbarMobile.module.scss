@@ -116,12 +116,11 @@
 
 
 .NavbarMobileMenuContainer {
-    background-color: $secondary-color;
-    border: $global-border; // for debugging
+    background-color: rgba(47, 47, 47);
+    border: $global-border;
     width: 100%;
     height: fit-content;
     overflow: hidden;
-    // backdrop-filter: blur(31px);
     display: inline-flex;
     display: -webkit-inline-flex;
     display: -moz-inline-flex;

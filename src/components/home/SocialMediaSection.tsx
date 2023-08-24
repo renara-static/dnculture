@@ -36,13 +36,13 @@ export default function SocialMediaSection() {
                                 Cek media sosial kita
                             </span>
                         </div>
-                        <div
+                        {/* <div
                             className={styles.HeaderCTA}>
                             Mau ngobrol-ngobrol dulu?
                             <CTAbutton>
                                 WhatsApp
                             </CTAbutton>
-                        </div>
+                        </div> */}
                     </div>
                     <div className={styles.socialCardList}>
                         {

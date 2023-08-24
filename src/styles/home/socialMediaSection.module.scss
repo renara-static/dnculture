@@ -18,12 +18,14 @@
             font-family: Plus Jakarta Sans;
 
             .HeaderTitleTop {
-                font-size: clamp(1rem, 2.5vw, 2rem);
+                // font-size: clamp(1rem, 2.5vw, 2rem);
+                font-size: 2.5rem;
                 font-weight: 500;
             }
 
             .HeaderTitleBottom {
-                font-size: clamp(1.5rem, 2.5vw, 2.5rem);
+                // font-size: clamp(1.5rem, 2.5vw, 2.5rem);
+                font-size: 2.4rem;
                 font-weight: 700;
             }
         }

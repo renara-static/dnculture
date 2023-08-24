@@ -19,6 +19,7 @@ import SectionContainer from '../general/SectionContainer'
 import ContentContainer from '../general/ContentContainer'
 import StyledText from '../general/StyledText'
 import TestiTitleBackground from '@/assets/images/background/testimonies.webp'
+import { testimoniData } from '@/assets/data/testimoniData'
 
 export default function TestimoniSection() {
     const cardData = Array.from({ length: 10 }, () => 'testimoni');
@@ -41,11 +42,6 @@ export default function TestimoniSection() {
                     <SectionTitle>
                         Testimoni
                     </SectionTitle>
-                    <p
-                    className={styles.testimoniDescription}
-                    >
-                        Lorem ipsum dolor sit amet consectetur. Facilisis eu rhoncus curabitur placerat mauris ipsum donec gravida. Facilisi et magna a aliquet.
-                    </p>
                     <button
                         id='button-left'
                         onClick={() => {
@@ -95,7 +91,7 @@ export default function TestimoniSection() {
                     >
 
                         {
-                            cardData.map((item, index) => {
+                            testimoniData.map((item, index) => {
                                 return (
                                     <SwiperSlide key={index}
                                         style={{
@@ -104,8 +100,8 @@ export default function TestimoniSection() {
                                             width: 'fit-content',
                                         }}>
                                         <TestimoniCard
-                                            name='Rizky'
-                                            description='Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, voluptatum.'
+                                            name={item.name}
+                                            description={item.content}
                                         />
                                     </SwiperSlide>
                                 )

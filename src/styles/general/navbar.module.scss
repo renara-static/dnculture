@@ -1,6 +1,6 @@
 @import "../globals.module.scss";
 
-$breakpoint: 768px;
+$breakpoint: 1068px;
 
 .NavbarParent {
     position: fixed;
@@ -19,7 +19,6 @@ $breakpoint: 768px;
     // logic for navbar responsiveness 
     .NavbarMobile {
         display: none;
-
         @media screen and (max-width: $breakpoint) {
             display: block;
         }

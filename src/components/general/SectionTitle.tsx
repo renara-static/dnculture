@@ -20,13 +20,6 @@ export default function SectionTitle({ title, subtitle, children, image }: Secti
     return (
         <div className={styles.sectionTitleContainer}>
             <div className={styles.titleContainerLeft}>
-                {/* <Image style={{
-                    backgroundColor: color,
-                }}
-                    src={image}
-                    alt={title}
-                    className={styles.titleLogo}
-                /> */}
                 <span className={styles.titleText}>
                     {children}
                 </span>
@@ -34,13 +27,6 @@ export default function SectionTitle({ title, subtitle, children, image }: Secti
             <div
                 className={styles.CTAContainer}
             >
-                {/* {buttonCTA &&
-                    <CTAbutton url={CTAurl} color={color}
-                        outline={true}
-                    >
-                        {CTAContent}
-                    </CTAbutton>
-                } */}
             </div>
         </div>
     )

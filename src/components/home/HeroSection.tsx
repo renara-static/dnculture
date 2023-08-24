@@ -87,7 +87,7 @@ export default function HeroSection() {
                             <div
                                 className={styles.text}
                             >
-                                Lorem ipsum dolor sit amet consectetur. Ullamcorper mauris amet massa odio. Interdum.
+                                DN Culture, solusi terbaik bagi Anda yang ingin membeli barang luar negeri di dunia otomotif tanpa repot.
                             </div>
                         </div>
                         <div

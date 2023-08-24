@@ -27,6 +27,11 @@
                 font-style: normal;
                 font-weight: 400;
                 line-height: 180%;
+
+                ul {
+                    list-style: circle;
+                    margin-left: 2rem;
+                }
             }
         }
 

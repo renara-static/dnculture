@@ -31,16 +31,13 @@ export default function TermsPage() {
                             <div
                                 className={styles.termsDesc}
                             >
-                                <V>Syarat & Ketentuan</V> adalah perjanjian antara Pembeli dan {CompanyName} yang berisikan peraturan yang mengatur hak, kewajiban, tanggung jawab Pembeli dan Belanja Dunia, sekaligus cara transaksi pada layanan kami.
+                                Syarat & Ketentuan merupakan perjanjian yang mengatur hak, kewajiban, dan tanggung jawab Pembeli dalam menggunakan layanan <V>DN Culture</V>.
                                 <br />
-                                {/* <br /> */}
-                                <V>Penjual</V> adalah pihak yang menjual Barang di luar negeri melalui media internet baik dalam bentuk web portal maupun aplikasi mobile.
+                                <V>Penjual</V> adalah pihak yang menjual Barang di luar negeri melalui platform online.
                                 <br />
-                                {/* <br /> */}
-                                <V>Pembeli</V> adalah pihak yang menggunakan jasa pembelian Barang melalui layanan yang disediakan oleh Belanja Dunia.
+                                <V>Pembeli</V> adalah mereka yang menggunakan jasa pembelian Barang dari <V>DN Culture</V>.
                                 <br />
-                                {/* <br /> */}
-                                <V>Barang</V> adalah benda berwujud dan memiliki fisik Barang yang dapat dikirim dan memenuhi kriteria pengiriman oleh perusahaan jasa pengiriman Barang.
+                                <V>Barang</V> sendiri mengacu pada benda berwujud yang dapat dikirim oleh perusahaan jasa pengiriman Barang.
                             </div>
                         </div>
                     </div>
@@ -63,15 +60,38 @@ export default function TermsPage() {
                             <ol
                                 className={styles.OrderedList}
                             >
-                                <li>Pembeli menyetujui syarat & ketentuan yang ditetapkan oleh {CompanyName}
-                                </li>
-                                <li>Barang yang dapat dikirim hanya yang berasal dari penjual online dari USA, Jepang, Korea, Australia, Singapura dan Malaysia.
+                                <li>
+                                    Pembeli harus menyetujui syarat & ketentuan yang telah ditetapkan oleh {CompanyName}.
                                 </li>
                                 <li>
-                                    Kami berhak menolak pesanan barang yang tidak dapat dikirim ke Indonesia karena termasuk kategori barang berbahaya atau menyalahi Undang-Undang yang berlaku di Indonesia atau pesanan yang berasal dari penjual dengan reputasi buruk (Untrusted Seller).
+                                    Hanya Barang yang berasal dari negara berikut yang dapat dikirmkan:
+                                    <ul>
+                                        <li>
+                                            USA
+                                        </li>
+                                        <li>
+                                            Jepang
+                                        </li>
+                                        <li>
+                                            Korea
+                                        </li>
+                                        <li>
+                                            Australia
+                                        </li>
+                                        <li>
+                                            Singapura
+                                        </li>
+                                        <li>
+                                            Malaysia
+                                        </li>
+                                    </ul>
+
                                 </li>
                                 <li>
-                                    Pembeli tidak dapat melakukan pembatalan pesanan kecuali dilakukan oleh pihak penjual seperti misalnya terjadi stok barang kosong atau hal lain.
+                                    {CompanyName} berhak menolak pesanan barang yang tidak dapat dikirim ke Indonesia karena termasuk dalam kategori barang berbahaya, melanggar Undang-Undang yang berlaku di Indonesia, atau berasal dari penjual dengan reputasi buruk (Untrusted Seller).
+                                </li>
+                                <li>
+                                    Pembeli tidak dapat membatalkan pesanan kecuali ada keadaan seperti stok barang kosong atau kejadian lain yang disetujui oleh penjual.
                                 </li>
                             </ol>
                         </div>
@@ -98,10 +118,9 @@ export default function TermsPage() {
                                 <li>Setelah pemesanan dilakukan, Pembeli harus melakukan pembayaran penuh maupun Uang Muka sejumlah harga yang disepakati.
                                 </li>
                                 <li>
-                                    Pembeli melakukan pelunasan sisa pembayaran (uang muka) saat barang tiba di Indonesia.
+                                    Pembeli melakukan pelunasan sisa pembayaran saat barang tiba di Indonesia.
                                 </li>
-
-                                <li>Pembayaran menggunakan bank transfer Bank BCA KCP Serpong an.Tomi Satriyo, rek no: 497 0451 353. atau Bank Mandiri an. Tomi Satriyo, rek no: 128 000 613 6433.
+                                <li>Pembayaran menggunakan bank transfer Bank BCA 
                                 </li>
                                 <li>
                                     Pembeli memahami dan menyetujui bahwa stok Barang dapat berubah sewaktu-waktu, saat stok kosong , kami akan membatalkan pesanan dan pembayaran dikembalikan penuh.
