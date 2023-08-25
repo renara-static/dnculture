@@ -17,17 +17,21 @@ type NavbarMenuButtonProps = {
 
 export default function NavbarMenuButton({ link, image, children, color, onclick }: NavbarMenuButtonProps) {
     const router = useRouter()
-    const style = {
-        marginRight: 10,
-        color: router.asPath === link ? variables.accentColor : variables.textColorLight,
-    }
     return (
         <Link
-            href={link} className={styles.NavbarButton}
+            href={link}
+            className={styles.NavbarButton}
             onClick={onclick}
         >
             <span
-                style={style}
+                style={{
+                    marginRight: 10,
+                    color: router.asPath === link ? variables.accentColor : variables.textColorLight,
+                    cursor: "pointer",
+                    transition: "all 0.2s ease-in-out",
+                    whiteSpace: "nowrap",
+                    textAlign: "center",
+                }}
             >{children}</span>
         </Link>
     )

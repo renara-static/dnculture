@@ -36,17 +36,21 @@ export default function NavbarDesktop({ data }: any) {
                 alignItems: 'center',
                 gap: '2.5rem',
             }}>
-                {data?.map((item: any) => {
-                    return (
-                        <div key={item.id} style={{
-                        }}>
-                            <NavbarMenuButton link={item.path} image={item.image} color={item.bg}>
-                                {item.name}
-                            </NavbarMenuButton>
-                        </div>
-                    )
-                })
-                }
+                <NavbarMenuButton
+                    link={'/'}
+                >
+                    Beranda
+                </NavbarMenuButton>
+                <NavbarMenuButton
+                    link={'/process'}
+                >
+                    Proses Pemesanan
+                </NavbarMenuButton>
+                <NavbarMenuButton
+                    link={'/terms'}
+                >
+                    Syarat & Ketentuan
+                </NavbarMenuButton>
                 <CTAbutton
                     url={companyData.contact}
                 >

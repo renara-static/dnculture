@@ -7,6 +7,8 @@ import MobileNavIcon from '@/assets/images/icon/mobile-nav-icon.svg';
 import MobileNavIconClose from '@/assets/images/icon/mobile-nav-icon-close.svg';
 import Image from 'next/image';
 import NavbarMenuButton from '@/components/navbar/navbarMenuButton';
+import CTAbutton from '@/components/general/CTAbutton';
+import { companyData } from '@/assets/data/companyData';
 
 
 export default function NavbarMobile({ data }: any) {
@@ -22,7 +24,6 @@ export default function NavbarMobile({ data }: any) {
             className={styles.NavbarMobile}
         >
             <CompanyLogo />
-            {/* navbar button to open container */}
             <button onClick={() => setShowMenu(!showMenu)}
                 className={styles.NavbarMobileButton}
             >
@@ -44,7 +45,7 @@ export default function NavbarMobile({ data }: any) {
                 position: showMenu ? 'static' : 'absolute',
             }}
         >
-            {data?.map((item: any) => {
+            {/* {data?.map((item: any) => {
                 return (
                     <NavbarMenuButton
                         onclick={toogleMenu}
@@ -53,7 +54,30 @@ export default function NavbarMobile({ data }: any) {
                     </NavbarMenuButton>
                 )
             })
-            }
+            } */}
+            <NavbarMenuButton
+                link={'/'}
+                onclick={toogleMenu}
+            >
+                Beranda
+            </NavbarMenuButton>
+            <NavbarMenuButton
+                onclick={toogleMenu}
+                link={'/process'}
+            >
+                Proses Pemesanan
+            </NavbarMenuButton>
+            <NavbarMenuButton
+                onclick={toogleMenu}
+                link={'/terms'}
+            >
+                Syarat & Ketentuan
+            </NavbarMenuButton>
+            <CTAbutton
+                url={companyData.contact}
+            >
+                Contact Us
+            </CTAbutton>
         </div>
     </>
     )

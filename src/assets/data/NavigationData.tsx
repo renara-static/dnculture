@@ -26,13 +26,6 @@ const NavData = [
         bg: '#F80',
         image: FaqIcon,
     },
-    // {
-    //     id: 4,
-    //     name: 'Kontak Kami',
-    //     path: '/contact',
-    //     bg: variables.greenColor,
-    //     image: TestiIcon
-    // }
 ]
 
 export default NavData;

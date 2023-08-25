@@ -41,11 +41,12 @@
         -moz-flex-direction: column;
         -ms-flex-direction: column;
         -o-flex-direction: column;
-        align-items: flex-start;
-        align-items: -webkit-flex-start;
-        align-items: -moz-flex-start;
-        align-items: -ms-flex-start;
-        align-items: -o-flex-start;
+        // align-items: flex-start;
+        // align-items: -webkit-flex-start;
+        // align-items: -moz-flex-start;
+        // align-items: -ms-flex-start;
+        // align-items: -o-flex-start;
+
         gap: 1rem;
         border-radius: 0.75rem;
         background: rgba(255, 255, 255, 0.40);
@@ -74,16 +75,17 @@
 
 
 .NavbarMobileMenuContainer {
+    // border: 2px solid green;
     background-color: rgba(47, 47, 47);
-    border: $global-border;
+    // border: $global-border;
     width: 100%;
     height: fit-content;
     overflow: hidden;
-    display: inline-flex;
-    display: -webkit-inline-flex;
-    display: -moz-inline-flex;
-    display: -ms-inline-flex;
-    display: -o-inline-flex;
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
 
     padding: 1rem 0.75rem 0.75rem 0.75rem;
     flex-direction: column;
@@ -96,10 +98,10 @@
     justify-content: -moz-center;
     justify-content: -ms-center;
     justify-content: -o-center;
-    align-items: flex-start;
-    align-items: -webkit-flex-start;
-    align-items: -moz-flex-start;
-    align-items: -ms-flex-start;
-    align-items: -o-flex-start;
+    align-items: center;
+    align-items: -webkit-center;
+    align-items: -moz-center;
+    align-items: -ms-center;
+    align-items: -o-center;
     gap: 1rem;
 }
