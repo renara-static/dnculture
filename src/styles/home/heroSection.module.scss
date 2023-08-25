@@ -39,6 +39,35 @@
         .ctaSection {
             border: $global-border; // for testing purpose  
             height: fit-content;
+
+            .ctaButton {
+                display: flex;
+                padding: 0.75rem 1rem;
+                justify-content: center;
+                align-items: center;
+                gap: 0.75rem;
+                align-self: stretch;
+                border-radius: 0.625rem;
+                background: linear-gradient(180deg, #FFF 0%, #E3E3E3 100%);
+                box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.25);
+                color: #000;
+                text-align: center;
+
+                /* Button - text */
+                text-shadow: 0px 0.699999988079071px 0.6000000238418579px rgba(0, 0, 0, 0.20);
+                font-family: Plus Jakarta Sans;
+                font-size: 1.25rem;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                width: fit-content;
+                pointer-events: all;
+                cursor: pointer;
+
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
         }
     }
 

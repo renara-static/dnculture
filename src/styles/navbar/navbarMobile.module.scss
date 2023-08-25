@@ -8,59 +8,28 @@
     display: -moz-flex;
     display: -ms-flex;
     display: -o-flex;
-    flex-direction: row;
-    -webkit-flex-direction: row;
-    -moz-flex-direction: row;
-    -ms-flex-direction: row;
-    -o-flex-direction: row;
-    justify-content: space-between;
-    justify-content: -webkit-space-between;
-    justify-content: -moz-space-between;
-    justify-content: -ms-space-between;
-    justify-content: -o-space-between;
     align-items: center;
     align-items: -webkit-center;
     align-items: -moz-center;
     align-items: -ms-center;
     align-items: -o-center;
     padding: 1.6rem 2rem;
-    margin: 0;
+    // margin: 0;
     height: 7.2rem;
-    min-height: fit-content;
+    // min-height: 2rem;
     max-height: $navbar-height !important;
     overflow: hidden;
+    justify-content: space-between;
+    justify-content: -webkit-space-between;
+    justify-content: -moz-space-between;
+    justify-content: -ms-space-between;
+    justify-content: -o-space-between;
+    width: 100%;
 
-    .NavbarLogo {
-        display: flex;
-        display: -webkit-flex;
-        display: -moz-flex;
-        display: -ms-flex;
-        display: -o-flex;
-        justify-content: left;
-        justify-content: -webkit-left;
-        justify-content: -moz-left;
-        justify-content: -ms-left;
-        justify-content: -o-left;
-        align-items: center;
-        align-items: -webkit-center;
-        align-items: -moz-center;
-        align-items: -ms-center;
-        align-items: -o-center;
-        height: 1rem;
-        padding-block: 4rem;
-        transform: scale(0.5);
-        -webkit-transform: scale(0.5);
-        -moz-transform: scale(0.5);
-        -ms-transform: scale(0.5);
-        -o-transform: scale(0.5);
-        transform-origin: left;
-        -o-transform-origin: left;
-        -ms-transform-origin: left;
-        -moz-transform-origin: left;
-        -webkit-transform-origin: left;
-    }
 
     .NavbarMobileButton {
+        width: 5.25rem;
+        height: 100%;
         display: flex;
         display: -webkit-flex;
         display: -moz-flex;
@@ -78,37 +47,26 @@
         align-items: -ms-flex-start;
         align-items: -o-flex-start;
         gap: 1rem;
-        border-radius: 1.2rem;
+        border-radius: 0.75rem;
         background: rgba(255, 255, 255, 0.40);
 
-        .NavbarMobileButtonInner {
+        .NavbarMobileButtonContainer {
+            height: inherit;
             display: flex;
-            display: -webkit-flex;
-            display: -moz-flex;
-            display: -ms-flex;
-            display: -o-flex;
-            padding: 0.7rem 1.6rem;
+            padding: 0.75rem 1rem;
             justify-content: center;
-            justify-content: -webkit-center;
-            justify-content: -moz-center;
-            justify-content: -ms-center;
-            justify-content: -o-center;
             align-items: center;
+            gap: 0.75rem;
             align-self: stretch;
-            border-radius: 1rem;
+            border-radius: 0.625rem;
             background: linear-gradient(180deg, #FFF 0%, #E3E3E3 100%);
 
             /* Button - inside */
             box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.25);
 
             .NavbarMobileButtonIcon {
-                object-fit: contain;
-                -o-object-fit: contain;
+                height: inherit;
                 filter: invert(1);
-                -webkit-filter: invert(1);
-                -moz-filter: invert(1);
-                -ms-filter: invert(1);
-                -o-filter: invert(1);
             }
         }
     }

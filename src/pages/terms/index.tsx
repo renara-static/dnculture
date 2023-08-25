@@ -6,15 +6,20 @@ import styles from '@/styles/terms/terms.module.scss'
 import { styled } from '@stitches/react'
 import { companyData } from '@/assets/data/companyData'
 import { TextHighlight as V } from '@/components/general/TextHighlight'
+import Head from 'next/head'
 
 
 export default function TermsPage() {
     const CompanyName = <V>{companyData?.name}</V>
     return (
         <>
+            <Head>
+                <title>Syarat & Ketentuan Pemesanan | DN Culture</title>
+                <meta name="description" content={`Syarat & Ketentuan Pemesanan DN Culture`} />
+                <meta property="og:title" content={`Syarat & Ketentuan Pemesanan DN Culture`} />
+                {/* <meta property='keywords' content={``} /> */}
+            </Head>
             <SectionContainer
-                // marginTop={true}
-                // marginBottom={true}
                 paddingBlock={true}
             >
                 <ContentContainer>
@@ -120,7 +125,8 @@ export default function TermsPage() {
                                 <li>
                                     Pembeli melakukan pelunasan sisa pembayaran saat barang tiba di Indonesia.
                                 </li>
-                                <li>Pembayaran menggunakan bank transfer Bank BCA 
+                                <li>Pembayaran menggunakan bank transfer Bank <V>BCA</V> <V>0960845757</V>{" "}
+                                    a/n <V>Dicky Anugerah D.P</V>
                                 </li>
                                 <li>
                                     Pembeli memahami dan menyetujui bahwa stok Barang dapat berubah sewaktu-waktu, saat stok kosong , kami akan membatalkan pesanan dan pembayaran dikembalikan penuh.

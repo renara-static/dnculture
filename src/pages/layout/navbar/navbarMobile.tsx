@@ -21,16 +21,13 @@ export default function NavbarMobile({ data }: any) {
         }}
             className={styles.NavbarMobile}
         >
-            <div id='Navbar-Mobile-Left'
-                className={styles.NavbarLogo}
+            <CompanyLogo />
+            {/* navbar button to open container */}
+            <button onClick={() => setShowMenu(!showMenu)}
+                className={styles.NavbarMobileButton}
             >
-                <CompanyLogo />
-            </div>
-            <button className={styles.NavbarMobileButton} onClick={() => setShowMenu(!showMenu)}>
                 <div
-                className={
-                    styles.NavbarMobileButtonInner
-                }
+                    className={styles.NavbarMobileButtonContainer}
                 >
                     <Image src={showMenu ? MobileNavIconClose : MobileNavIcon}
                         className={styles.NavbarMobileButtonIcon}

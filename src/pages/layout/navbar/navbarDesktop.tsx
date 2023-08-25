@@ -20,6 +20,8 @@ export default function NavbarDesktop({ data }: any) {
                 flexDirection: 'row',
                 justifyContent: 'space-between',
                 alignItems: 'center',
+                maxHeight: variable.navbarHeight,
+                overflow: 'hidden',
             }}
         >
             <div id='Navbar-Desktop-Left'>

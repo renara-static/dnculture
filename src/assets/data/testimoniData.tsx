@@ -7,7 +7,7 @@ export const testimoniData = [
     {
         id: 2,
         name: 'C***o',
-        content: 'Biar bintang yang berbicara!'
+        content: 'Barang sesuai deskripsi, pelayanan ramah dan fast respon!'
     },
     {
         id: 3,

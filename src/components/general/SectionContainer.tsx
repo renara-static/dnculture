@@ -20,7 +20,7 @@ type SectionContainerProps = {
 
 export default function SectionContainer({ backgroundColor, children, className, marginTop, padding, paddingBlock, marginBottom, style, id, ornament }: SectionContainerProps) {
     return (
-        <div
+        <section
             id={id}
             className={`${styles.sectionContainer} ${className}}`}
             style={{
@@ -34,6 +34,6 @@ export default function SectionContainer({ backgroundColor, children, className,
         >
             {ornament}
             {children}
-        </div>
+        </section>
     )
 }

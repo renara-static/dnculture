@@ -19,7 +19,8 @@ import Ambientornamment from '@assets/images/background/ambient-ornament.png'
 import { companyData } from '@/assets/data/companyData'
 import { TextHighlight as V } from '../general/TextHighlight'
 import { productData } from '@/assets/data/productData'
-
+import Link from 'next/link'
+import Arrow from '@/assets/images/icon/arrow-right-circle.svg'
 
 function SectionRight() {
     return (
@@ -93,9 +94,13 @@ export default function HeroSection() {
                         <div
                             className={styles.ctaSection}
                         >
-                            <CTAbutton>
+                            <Link href='#product'
+                                className={styles.ctaButton}
+                            >
                                 Lihat Produk
-                            </CTAbutton>
+                                <Image src={Arrow} alt="Arrow" className={styles.arrow} />
+
+                            </Link>
                         </div>
                     </div>
                     <SectionRight />

@@ -35,7 +35,7 @@ export default function MediaSocial(data: any) {
                 {data.title}
             </div>
             <CTAbutton
-                url={data.url}
+                url={data.href}
                 className={style.mediaSocialButton}
             >
                 Lihat Produk

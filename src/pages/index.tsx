@@ -20,6 +20,7 @@ export default function Home() {
         <meta name="description" content={companyData.description} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
+        <meta name="google-site-verification" content="lKroTJqn-Kss6E9Z-shB-0x6UCezzd8ytPQeTTzJsmE" />
       </Head>
       <main
         style={{

@@ -1,4 +1,4 @@
-import BukalapakImage from '../images/icon/bukalapak.svg'
+import WhatsappImage from '../images/icon/whatsapp.svg';
 import InstagramImage from '../images/icon/instagram.svg';
 import ShopeeImage from '../images/icon/shopee.svg';
 import TokopediaImage from '../images/icon/tokopedia.svg';
@@ -13,11 +13,10 @@ export const companyData: any = {
     email: 'Company Email',
     social: [
         {
-            logo: BukalapakImage,
+            logo: WhatsappImage,
             name: 'Bukalapak',
-            href: 'https://www.bukalapak.com/u/dnculture',
-            // color: '#FF5722',
-            background: 'linear-gradient(180deg, #E21C53 0%, #97002A 100%)',
+            href: 'https://wa.me/628125880555',
+            background: 'linear-gradient(180deg, #56B04C 0%, #196C13 100%)',
         },
         {
             logo: InstagramImage,
@@ -28,13 +27,13 @@ export const companyData: any = {
         {
             logo: ShopeeImage,
             name: 'Shopee',
-            href: 'https://shopee.co.id/dnculture',
+            href: 'https://shopee.co.id/dickyanugerah',
             background: 'linear-gradient(180deg, #F1582C 0%, #B72C05 100%)',
         },
         {
             logo: TokopediaImage,
             name: 'Tokopedia',
-            href: 'https://www.tokopedia.com/dnculture',
+            href: 'https://tokopedia.link/dnculture',
             background: 'linear-gradient(180deg, #56B04C 0%, #196C13 100%)',
         }
     ]
