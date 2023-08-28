@@ -49,7 +49,6 @@ export default function TermsPage() {
                 </ContentContainer>
             </SectionContainer>
             <SectionContainer
-                // marginBottom={true}
                 paddingBlock={true}
             >
                 <ContentContainer>
@@ -88,6 +87,12 @@ export default function TermsPage() {
                                         </li>
                                         <li>
                                             Malaysia
+                                        </li>
+                                        <li>
+                                            China
+                                        </li>
+                                        <li>
+                                            Eropa
                                         </li>
                                     </ul>
 

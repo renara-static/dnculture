@@ -14,13 +14,18 @@ type SectionTitleProps = {
     buttonCTA?: boolean,
     CTAContent?: string,
     CTAurl?: string,
+    color?: string,
 }
 
-export default function SectionTitle({ title, subtitle, children, image }: SectionTitleProps) {
+export default function SectionTitle({ title, subtitle, children, image, color }: SectionTitleProps) {
     return (
         <div className={styles.sectionTitleContainer}>
             <div className={styles.titleContainerLeft}>
-                <span className={styles.titleText}>
+                <span className={styles.titleText}
+                    style={{
+                        color: color
+                    }}
+                >
                     {children}
                 </span>
             </div>

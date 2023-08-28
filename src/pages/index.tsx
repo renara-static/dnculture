@@ -10,6 +10,8 @@ import TestimoniSection from '@/components/home/TestimoniSection'
 import SocialMediaSection from '@/components/home/SocialMediaSection'
 import { companyData } from '@/assets/data/companyData'
 import FaqSection from '@/components/home/FaqSection'
+import CompanySection from '@/components/home/CompanySection'
+
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
@@ -31,6 +33,7 @@ export default function Home() {
         <AboutSection />
         <ProductSection />
         <SocialMediaSection />
+        <CompanySection />
         <TestimoniSection />
       </main>
     </>

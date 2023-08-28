@@ -21,6 +21,7 @@ import StyledText from '../general/StyledText'
 import TestiTitleBackground from '@/assets/images/background/testimonies.webp'
 import { testimoniData } from '@/assets/data/testimoniData'
 
+
 export default function TestimoniSection() {
     const cardData = Array.from({ length: 10 }, () => 'testimoni');
     const [currentSlide, setCurrentSlide] = useState(0)

@@ -14,9 +14,10 @@ export default function FaqSection() {
             paddingBlock={true}
             marginBottom={true}
         >
-            <SectionTitle image={FaqLogo}
-            buttonCTA={true}
-            CTAContent='Ajukan Pertanyaan'
+            <SectionTitle
+                image={FaqLogo}
+                buttonCTA={true}
+                CTAContent='Ajukan Pertanyaan'
             >
                 FAQ
             </SectionTitle>
