@@ -23,10 +23,8 @@ export default function CompanySection() {
       <ContentContainer
       >
         <SectionTitle
-          // image={FaqLogo}
           buttonCTA={true}
           CTAContent='Ajukan Pertanyaan'
-        // color='#000000'
         >
           Jaminan Barang Asli
         </SectionTitle>
@@ -37,7 +35,7 @@ export default function CompanySection() {
           my-[1rem]
           '
         >
-          Anda <V>dijamin</V> akan menerima produk yang asli! <V>DN Culture</V> hanya melakukan pembelian melalui situs resmi, baik itu pembelian secara langsung, pemesanan produk kustom, atau menggunakan sistem "Pre-Order".
+          Anda <V>dijamin</V> akan menerima produk yang asli! <V>DN Culture</V> hanya melakukan pembelian melalui situs resmi, baik itu pembelian secara langsung, pemesanan produk kustom, atau menggunakan sistem &ldquo;Pre-Order&rdquo;.
         </div>
         <hr
           className='
