@@ -60,8 +60,7 @@ export default function CompanySection() {
                   className='w-full
                     rounded-3xl
                     p-[2rem]
-                    saturate-200
-                    '
+                    saturate-200'
                 />
               )
             })
@@ -74,8 +73,6 @@ export default function CompanySection() {
 
 
 // company data
-
-
 const CompanyData = [
   {
     id: 1,
